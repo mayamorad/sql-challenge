@@ -13,6 +13,32 @@ Key considerations:
 - Ensured data integrity with appropriate constraints
 - Normalized the data to remove redundancy
 
-**Part 2: Data Engineering:** Using the provided 6 CSV files, a table schema was created that included data types, primary keys, foreign keys, and other constraints in addition to tables.
+**Part 2: Data Engineering:** 
+I created a PostgreSQL database to store the data and defined the required tables based on the ERD.
+- Schema file: schema.sql
 
-**Data Analysis:** The queries.sql code answers the questions prompted. 
+Steps:
+- Defined the six tables with appropriate data types and constraints
+- Established foreign key relationships for department and employee connections
+- Ensured proper ordering of table creation to avoid reference errors
+- Imported the data using COPY statements or INSERT INTO queries
+
+**Part 3: Data Analysis:**
+Once the database was populated, I ran SQL queries to analyze the employee records.
+- Queries file: queries.sql
+
+Key Queries:
+- List all employees with their employee number, name, sex, and salary
+- Find employees hired in 1986
+- Identify department managers with their department details
+- Retrieve employees by department (Sales, Development, etc.)
+- Find employees named Hercules with last names starting with B
+- Count how many employees share the same last name
+
+----------
+Technologies Used: 
+QuickDBD for ERD design
+pgAdming 4 for database creation and querying
+QuickDBD for ERD design
+
+----------
